@@ -24,6 +24,17 @@ To stop Elasticsearch type Ctrl-C on the previous terminal or `docker stop es`.
 NOTE for [Mac users](https://docs.docker.com/docker-for-mac/docker-toolbox/#/setting-up-to-run-docker-for-mac):
 To get the IP of your virtualized docker host type `env | grep DOCKER`, e.g. 192.168.99.100.
 
+## Running
+
+```
+➜ ES_HOST=192.168.99.100:9200 npm start
+```
+
+```
+➜ curl localhost:3000
+[]
+```
+
 ## Testing
 
 ```
