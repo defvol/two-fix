@@ -12,6 +12,7 @@ test('GET /', function (t) {
   .expect('Content-Type', /json/)
   .expect(200)
   .end(function (err, res) {
+    t.error(err, 'no error')
     t.deepEqual(res.body, [], 'empty array')
     t.end()
   })
