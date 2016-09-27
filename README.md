@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rodowi/two-fix.svg?branch=master)](https://travis-ci.org/rodowi/two-fix)
+
 # two-fix
 
 A remake of [osmlab/to-fix](https://github.com/osmlab/to-fix-backend)
