@@ -1,0 +1,31 @@
+{
+  "name": "two-fix",
+  "version": "0.1.0",
+  "description": "A remake of osmlab/to-fix",
+  "bin": {
+    "two-fix": "lib/cli.js"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint lib/*.js test/*.js",
+    "pretest": "npm run lint",
+    "test": "tape test/*.test.js"
+  },
+  "keywords": [
+    "generator-npm-pasta",
+    "osm"
+  ],
+  "author": "rodowi",
+  "license": "ISC",
+  "repository": "rodowi/two-fix",
+  "devDependencies": {
+    "eslint": "^3.6.1",
+    "eslint-config-standard": "^6.1.0",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-standard": "^2.0.0",
+    "tape": "^4.6.0"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
