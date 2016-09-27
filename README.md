@@ -30,9 +30,22 @@ To get the IP of your virtualized docker host type `env | grep DOCKER`, e.g. 192
 ➜ ES_HOST=192.168.99.100:9200 npm start
 ```
 
+## API
+
+#### GET /
+
 ```
 ➜ curl localhost:3000
 []
+```
+
+#### POST /tasks
+
+```
+➜ curl -X POST -d '{"a":1}' --header "Content-Type:application/json" localhost:3000/tasks
+received 1 tasks
+➜ curl -X POST --data-binary @test/fixtures/unconnected-highways.json --header "Content-Type:application/json" localhost:3000/tasks
+received 5573 tasks
 ```
 
 ## Testing
