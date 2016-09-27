@@ -9,7 +9,8 @@
   "scripts": {
     "lint": "eslint lib/*.js test/*.js",
     "pretest": "npm run lint",
-    "test": "tape test/*.test.js"
+    "test": "tape test/*.test.js",
+    "start": "node lib/api.js"
   },
   "keywords": [
     "generator-npm-pasta",
@@ -23,10 +24,12 @@
     "eslint-config-standard": "^6.1.0",
     "eslint-plugin-promise": "^2.0.1",
     "eslint-plugin-standard": "^2.0.0",
+    "supertest": "^2.0.0",
     "tape": "^4.6.0"
   },
   "dependencies": {
     "elasticsearch": "^11.0.1",
+    "express": "^4.14.0",
     "minimist": "^1.2.0"
   }
 }
